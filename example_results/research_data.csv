@@ -1,0 +1,36 @@
+source,metric,value,unit,category,collected_at
+Academic Source 1,metric_1,19.72,percentage,category_a,2025-07-11T15:36:27.843886
+Academic Source 1,metric_2,94.28,percentage,category_c,2025-07-11T15:36:27.843901
+Academic Source 1,metric_3,95.93,percentage,category_b,2025-07-11T15:36:27.843905
+Academic Source 1,metric_4,44.25,percentage,category_b,2025-07-11T15:36:27.843908
+Academic Source 1,metric_5,53.56,percentage,category_c,2025-07-11T15:36:27.843910
+Academic Source 1,metric_6,23.25,percentage,category_a,2025-07-11T15:36:27.843913
+Academic Source 1,metric_7,43.89,percentage,category_b,2025-07-11T15:36:27.843915
+Academic Source 1,metric_8,23.09,percentage,category_a,2025-07-11T15:36:27.843918
+Academic Source 1,metric_9,40.37,percentage,category_b,2025-07-11T15:36:27.843920
+Academic Source 1,metric_10,54.43,percentage,category_c,2025-07-11T15:36:27.843922
+Academic Source 1,metric_11,18.93,percentage,category_c,2025-07-11T15:36:27.843925
+Academic Source 1,metric_12,26.54,percentage,category_c,2025-07-11T15:36:27.843927
+Academic Source 1,metric_13,30.99,percentage,category_c,2025-07-11T15:36:27.843930
+Academic Source 1,metric_14,70.82,percentage,category_a,2025-07-11T15:36:27.843932
+Government Data,metric_1,97.68,percentage,category_b,2025-07-11T15:36:27.918930
+Government Data,metric_2,44.92,percentage,category_a,2025-07-11T15:36:27.918939
+Government Data,metric_3,73.06,percentage,category_a,2025-07-11T15:36:27.918942
+Government Data,metric_4,34.04,percentage,category_c,2025-07-11T15:36:27.918945
+Government Data,metric_5,16.91,percentage,category_c,2025-07-11T15:36:27.918947
+Government Data,metric_6,27.85,percentage,category_c,2025-07-11T15:36:27.918949
+Government Data,metric_7,99.13,percentage,category_c,2025-07-11T15:36:27.918951
+Government Data,metric_8,90.93,percentage,category_b,2025-07-11T15:36:27.918954
+Government Data,metric_9,41.6,percentage,category_a,2025-07-11T15:36:27.918956
+Government Data,metric_10,95.69,percentage,category_c,2025-07-11T15:36:27.918958
+Government Data,metric_11,72.53,percentage,category_b,2025-07-11T15:36:27.918961
+Statistics Portal,metric_1,97.83,percentage,category_c,2025-07-11T15:36:27.996008
+Statistics Portal,metric_2,95.45,percentage,category_b,2025-07-11T15:36:27.996018
+Statistics Portal,metric_3,64.01,percentage,category_a,2025-07-11T15:36:27.996020
+Statistics Portal,metric_4,69.62,percentage,category_c,2025-07-11T15:36:27.996023
+Statistics Portal,metric_5,42.02,percentage,category_a,2025-07-11T15:36:27.996025
+Statistics Portal,metric_6,85.42,percentage,category_c,2025-07-11T15:36:27.996027
+Statistics Portal,metric_7,38.92,percentage,category_b,2025-07-11T15:36:27.996030
+Statistics Portal,metric_8,42.67,percentage,category_c,2025-07-11T15:36:27.996032
+Statistics Portal,metric_9,74.26,percentage,category_a,2025-07-11T15:36:27.996034
+Statistics Portal,metric_10,22.31,percentage,category_a,2025-07-11T15:36:27.996046

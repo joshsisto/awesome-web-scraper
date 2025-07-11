@@ -1,0 +1,52 @@
+[
+  {
+    "url": "https://httpbin.org/get",
+    "status_code": 200,
+    "response_time": 0.334097,
+    "timestamp": "2025-07-11T15:36:27.997611",
+    "content_length": 315,
+    "health_score": 100,
+    "issues": [],
+    "recommendations": []
+  },
+  {
+    "url": "https://httpbin.org/delay/2",
+    "status_code": 200,
+    "response_time": 2.078507,
+    "timestamp": "2025-07-11T15:36:28.331786",
+    "content_length": 365,
+    "health_score": 85,
+    "issues": [
+      "Slow response time"
+    ],
+    "recommendations": [
+      "Optimize server performance",
+      "Consider CDN implementation",
+      "Review database query performance"
+    ]
+  },
+  {
+    "url": "https://httpbin.org/status/200",
+    "status_code": 200,
+    "response_time": 0.072519,
+    "timestamp": "2025-07-11T15:36:30.410358",
+    "content_length": 0,
+    "health_score": 100,
+    "issues": [],
+    "recommendations": []
+  },
+  {
+    "url": "https://httpbin.org/status/404",
+    "status_code": 404,
+    "response_time": 0.075462,
+    "timestamp": "2025-07-11T15:36:30.482902",
+    "content_length": 0,
+    "health_score": 50,
+    "issues": [
+      "HTTP 404 error"
+    ],
+    "recommendations": [
+      "Check server configuration and error logs"
+    ]
+  }
+]

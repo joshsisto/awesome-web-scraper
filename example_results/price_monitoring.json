@@ -1,0 +1,22 @@
+[
+  {
+    "product_name": "Example Product 1",
+    "url": "https://httpbin.org/json",
+    "current_price": 88.23,
+    "target_price": 100.0,
+    "price_difference": -11.769999999999996,
+    "is_deal": true,
+    "timestamp": "2025-07-11T15:36:26.830829",
+    "status": "available"
+  },
+  {
+    "product_name": "Example Product 2",
+    "url": "https://httpbin.org/get",
+    "current_price": 93.01,
+    "target_price": 50.0,
+    "price_difference": 43.010000000000005,
+    "is_deal": false,
+    "timestamp": "2025-07-11T15:36:27.029599",
+    "status": "available"
+  }
+]

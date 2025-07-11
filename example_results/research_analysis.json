@@ -1,0 +1,28 @@
+{
+  "total_records": 35,
+  "statistics": {
+    "mean": 56.19714285714286,
+    "min": 16.91,
+    "max": 99.13,
+    "range": 82.22
+  },
+  "category_breakdown": {
+    "category_a": {
+      "count": 11,
+      "average": 45.36909090909091
+    },
+    "category_c": {
+      "count": 15,
+      "average": 56.525999999999996
+    },
+    "category_b": {
+      "count": 9,
+      "average": 68.88333333333334
+    }
+  },
+  "source_breakdown": {
+    "Academic Source 1": 14,
+    "Government Data": 11,
+    "Statistics Portal": 10
+  }
+}
