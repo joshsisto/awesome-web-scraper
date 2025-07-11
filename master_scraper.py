@@ -34,6 +34,9 @@ from contextlib import asynccontextmanager
 import httpx
 import re
 
+# VPN Security Check
+from vpn_checker import require_vpn
+
 
 class ScrapingDatabase:
     """SQLite database for storing scraping results"""
@@ -614,6 +617,12 @@ Examples:
         help='Verify SSL certificates (default: disabled for compatibility)'
     )
     
+    parser.add_argument(
+        '--skip-vpn-check',
+        action='store_true',
+        help='Skip VPN security check (NOT RECOMMENDED - for testing only)'
+    )
+    
     return parser.parse_args()
 
 
@@ -717,6 +726,13 @@ async def main():
     """Main entry point"""
     args = parse_arguments()
     config = load_config(args.config)
+    
+    # 🔒 SECURITY CHECK: Ensure VPN is active (blocks home IP 23.115.156.177)
+    if not args.skip_vpn_check:
+        current_ip = require_vpn()
+        print(f"🔒 VPN Check: ✅ Active (IP: {current_ip})")
+    else:
+        print("⚠️  VPN Check: SKIPPED (--skip-vpn-check used)")
     
     # Update config with command line args
     config['verify_ssl'] = args.verify_ssl

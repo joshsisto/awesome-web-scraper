@@ -48,6 +48,7 @@ import uvicorn
 
 # Import our scraping components
 from master_scraper import ProgressiveScraper, ScrapingDatabase
+from vpn_checker import async_check_vpn
 
 
 # Pydantic models for API
@@ -596,6 +597,13 @@ async def perform_scraping(task_id: str, url: str, methods: List[str], config: D
     try:
         # Update task status
         task_manager.update_task(task_id, status="running", started_at=datetime.now().isoformat())
+        
+        # 🔒 SECURITY CHECK: Ensure VPN is active before scraping
+        is_vpn_active, vpn_message, current_ip = await async_check_vpn()
+        if not is_vpn_active:
+            raise Exception(f"VPN CHECK FAILED: {vpn_message}")
+        
+        logger.info(f"VPN Check passed for task {task_id}: {current_ip}")
         
         # Create scraper with config
         scraper_config = {
