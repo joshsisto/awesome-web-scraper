@@ -1,0 +1,156 @@
+{
+  "timestamp": "2025-07-11T12:17:20.794778",
+  "summary": {
+    "total_tests": 17,
+    "passed": 13,
+    "failed": 4,
+    "success_rate": 0.7647058823529411
+  },
+  "features": {
+    "HTTP Functionality": true,
+    "IP Detection": true,
+    "Data Models": true,
+    "Service Simulation": true,
+    "Anti-Detection": true,
+    "Error Handling": true,
+    "Performance Metrics": true
+  },
+  "detailed_results": [
+    {
+      "test": "Simple GET request",
+      "url": "https://httpbin.org/get",
+      "status_code": 200,
+      "success": true,
+      "response_time": 1.117654,
+      "content_length": 315
+    },
+    {
+      "test": "JSON response",
+      "url": "https://httpbin.org/json",
+      "status_code": 200,
+      "success": true,
+      "response_time": 0.076066,
+      "content_length": 429
+    },
+    {
+      "test": "User agent detection",
+      "url": "https://httpbin.org/user-agent",
+      "status_code": 200,
+      "success": true,
+      "response_time": 0.073339,
+      "content_length": 42
+    },
+    {
+      "test": "Headers inspection",
+      "url": "https://httpbin.org/headers",
+      "status_code": 200,
+      "success": true,
+      "response_time": 1.621939,
+      "content_length": 232
+    },
+    {
+      "test": "IP Detection",
+      "ip": "23.115.156.177",
+      "location": "Rancho Cordova, United States",
+      "isp": "AT&T Enterprises, LLC",
+      "success": true
+    },
+    {
+      "test": "Model Functionality",
+      "success": true,
+      "request_fields": 25,
+      "result_fields": 24,
+      "proxy_fields": 24
+    },
+    {
+      "test": "PyDoll Service Simulation",
+      "url": "https://httpbin.org/json",
+      "success": true,
+      "data": {
+        "url": "https://httpbin.org/json",
+        "status_code": 200,
+        "content_type": "application/json",
+        "size": 429,
+        "extraction_time": 0.846428
+      }
+    },
+    {
+      "test": "PyDoll Service Simulation",
+      "url": "https://httpbin.org/xml",
+      "success": true,
+      "data": {
+        "url": "https://httpbin.org/xml",
+        "status_code": 200,
+        "content_type": "application/xml",
+        "size": 522,
+        "extraction_time": 1.515888
+      }
+    },
+    {
+      "test": "PyDoll Service Simulation",
+      "url": "https://httpbin.org/html",
+      "success": true,
+      "data": {
+        "url": "https://httpbin.org/html",
+        "status_code": 200,
+        "content_type": "text/html; charset=utf-8",
+        "size": 3739,
+        "extraction_time": 0.447904
+      }
+    },
+    {
+      "test": "Anti-Detection Headers",
+      "user_agent_index": 1,
+      "success": true,
+      "detected_ua": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    },
+    {
+      "test": "Anti-Detection Headers",
+      "user_agent_index": 2,
+      "success": true,
+      "detected_ua": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    },
+    {
+      "test": "Anti-Detection Headers",
+      "user_agent_index": 3,
+      "success": true,
+      "detected_ua": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    },
+    {
+      "test": "Error Handling - 404 Not Found",
+      "url": "https://httpbin.org/status/404",
+      "status_code": 404,
+      "handled": true,
+      "expected_error": "404 Not Found"
+    },
+    {
+      "test": "Error Handling - 500 Server Error",
+      "url": "https://httpbin.org/status/500",
+      "status_code": 500,
+      "handled": true,
+      "expected_error": "500 Server Error"
+    },
+    {
+      "test": "Error Handling - Timeout",
+      "url": "https://httpbin.org/delay/5",
+      "timeout": true,
+      "handled": true,
+      "expected_error": "Timeout"
+    },
+    {
+      "test": "Error Handling - Rate Limit",
+      "url": "https://httpbin.org/status/429",
+      "status_code": 429,
+      "handled": true,
+      "expected_error": "Rate Limit"
+    },
+    {
+      "test": "Performance Metrics",
+      "total_requests": 3,
+      "avg_response_time": 0.8369699783312777,
+      "min_response_time": 0.15113772195763886,
+      "max_response_time": 1.845038996078074,
+      "success": true
+    }
+  ]
+}

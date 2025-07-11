@@ -1,0 +1,135 @@
+{
+  "timestamp": "2025-07-11T12:19:11.839998",
+  "test_summary": {
+    "total_log_entries": 13,
+    "test_duration": 0.5045971870422363,
+    "features_tested": [
+      "Basic Logging",
+      "Request Tracking",
+      "Error Handling",
+      "Performance Metrics",
+      "Method Distribution",
+      "Status Code Tracking"
+    ],
+    "features_passed": 6
+  },
+  "metrics_summary": {
+    "uptime_seconds": 0.5045971870422363,
+    "total_requests": 5,
+    "successful_requests": 3,
+    "failed_requests": 2,
+    "success_rate": 0.6,
+    "requests_per_second": 5.0,
+    "avg_response_time": 1.6199999999999999,
+    "min_response_time": 0.2,
+    "max_response_time": 5.0,
+    "status_codes": {
+      "200": 3,
+      "408": 1,
+      "404": 1
+    },
+    "method_usage": {
+      "scrapy": 2,
+      "pydoll": 2,
+      "playwright": 1
+    },
+    "proxy_usage": {
+      "proxy-scrapy.example.com:8080": 2,
+      "proxy-pydoll.example.com:8080": 2,
+      "proxy-playwright.example.com:8080": 1
+    },
+    "error_types": {
+      "timeout": 1,
+      "not_found": 1
+    }
+  },
+  "feature_validation": {
+    "Basic Logging": true,
+    "Request Tracking": true,
+    "Error Handling": true,
+    "Performance Metrics": true,
+    "Method Distribution": true,
+    "Status Code Tracking": true
+  },
+  "log_entries": [
+    {
+      "timestamp": "2025-07-11T12:19:11.335189",
+      "level": "debug",
+      "message": "Debug message for development"
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.335250",
+      "level": "info",
+      "message": "Information about scraping progress"
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.335295",
+      "level": "warning",
+      "message": "Warning about rate limiting"
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.335337",
+      "level": "error",
+      "message": "Error during data extraction"
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.435921",
+      "request_method": "scrapy",
+      "url": "https://example.com/products",
+      "status_code": 200,
+      "response_time": 0.5
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.536480",
+      "request_method": "pydoll",
+      "url": "https://api.example.com/data",
+      "status_code": 200,
+      "response_time": 0.3
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.636959",
+      "request_method": "playwright",
+      "url": "https://spa.example.com",
+      "status_code": 200,
+      "response_time": 2.1
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.737942",
+      "request_method": "scrapy",
+      "url": "https://example.com/timeout",
+      "status_code": 408,
+      "response_time": 5.0
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.838500",
+      "request_method": "pydoll",
+      "url": "https://api.example.com/notfound",
+      "status_code": 404,
+      "response_time": 0.2
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.838688",
+      "error_type": "ConnectionError",
+      "error_message": "Failed to connect to proxy server",
+      "component": "error_handler"
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.838730",
+      "error_type": "TimeoutError",
+      "error_message": "Request timed out after 30 seconds",
+      "component": "error_handler"
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.838780",
+      "error_type": "ParseError",
+      "error_message": "Failed to parse HTML content",
+      "component": "error_handler"
+    },
+    {
+      "timestamp": "2025-07-11T12:19:11.838860",
+      "error_type": "ValidationError",
+      "error_message": "Invalid data format received",
+      "component": "error_handler"
+    }
+  ]
+}

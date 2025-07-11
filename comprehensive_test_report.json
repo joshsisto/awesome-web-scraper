@@ -1,0 +1,259 @@
+{
+  "timestamp": "2025-07-11T12:24:29.187561",
+  "test_duration": 16.599515676498413,
+  "overall_stats": {
+    "total_tests": 15,
+    "passed_tests": 15,
+    "failed_tests": 0,
+    "framework_tests": {
+      "scrapy": {
+        "attempted": 3,
+        "passed": 3
+      },
+      "pydoll": {
+        "attempted": 4,
+        "passed": 4
+      },
+      "playwright": {
+        "attempted": 4,
+        "passed": 4
+      }
+    }
+  },
+  "success_rate": 1.0,
+  "framework_results": {
+    "scrapy": {
+      "attempted": 3,
+      "passed": 3
+    },
+    "pydoll": {
+      "attempted": 4,
+      "passed": 4
+    },
+    "playwright": {
+      "attempted": 4,
+      "passed": 4
+    }
+  },
+  "feature_validation": {
+    "Multi-Framework Support": true,
+    "Scrapy Capabilities": true,
+    "PyDoll Capabilities": true,
+    "Playwright Capabilities": true,
+    "IP Detection": true,
+    "Anti-Detection": true,
+    "Error Handling": true,
+    "Performance Tracking": true
+  },
+  "performance": {
+    "total_requests": 11,
+    "avg_response_time": 0.5282944115725431,
+    "min_response_time": 0.07240748405456543,
+    "max_response_time": 1.691730260848999
+  },
+  "detailed_results": [
+    {
+      "test_type": "scrapy",
+      "test_name": "Simple HTML Scraping",
+      "url": "https://httpbin.org/html",
+      "status_code": 200,
+      "response_time": 0.34957027435302734,
+      "extracted_data": {
+        "title": null,
+        "paragraphs": [
+          "Availing himself of the mild, summer-cool weather that now reigned in these latitudes, and in preparation for the peculiarly active pursuits shortly to be anticipated, Perth, the begrimed, blistered old blacksmith, had not removed his portable forge to the hold again, after concluding his contributory work for Ahab's leg, but still retained it on deck, fast lashed to ringbolts by the foremast; being now almost incessantly invoked by the headsmen, and harpooneers, and bowsmen to do some little job for them; altering, or repairing, or new shaping their various weapons and boat furniture. Often he would be surrounded by an eager circle, all waiting to be served; holding boat-spades, pike-heads, harpoons, and lances, and jealously watching his every sooty movement, as he toiled. Nevertheless, this old man's was a patient hammer wielded by a patient arm. No murmur, no impatience, no petulance did come from him. Silent, slow, and solemn; bowing over still further his chronically broken back, he toiled away, as if toil were life itself, and the heavy beating of his hammer the heavy beating of his heart. And so it was.\u2014Most miserable! A peculiar walk in this old man, a certain slight but painful appearing yawing in his gait, had at an early period of the voyage excited the curiosity of the mariners. And to the importunity of their persisted questionings he had finally given in; and so it came to pass that every one now knew the shameful story of his wretched fate. Belated, and not innocently, one bitter winter's midnight, on the road running between two country towns, the blacksmith half-stupidly felt the deadly numbness stealing over him, and sought refuge in a leaning, dilapidated barn. The issue was, the loss of the extremities of both feet. Out of this revelation, part by part, at last came out the four acts of the gladness, and the one long, and as yet uncatastrophied fifth act of the grief of his life's drama. He was an old man, who, at the age of nearly sixty, had postponedly encountered that thing in sorrow's technicals called ruin. He had been an artisan of famed excellence, and with plenty to do; owned a house and garden; embraced a youthful, daughter-like, loving wife, and three blithe, ruddy children; every Sunday went to a cheerful-looking church, planted in a grove. But one night, under cover of darkness, and further concealed in a most cunning disguisement, a desperate burglar slid into his happy home, and robbed them all of everything. And darker yet to tell, the blacksmith himself did ignorantly conduct this burglar into his family's heart. It was the Bottle Conjuror! Upon the opening of that fatal cork, forth flew the fiend, and shrivelled up his home. Now, for prudent, most wise, and economic reasons, the blacksmith's shop was in the basement of his dwelling, but with a separate entrance to it; so that always had the young and loving healthy wife listened with no unhappy nervousness, but with vigorous pleasure, to the stout ringing of her young-armed old husband's hammer; whose reverberations, muffled by passing through the floors and walls, came up to her, not unsweetly, in her nursery; and so, to stout Labor's iron lullaby, the blacksmith's infants were rocked to slumber. Oh, woe on woe! Oh, Death, why canst thou not sometimes be timely? Hadst thou taken this old blacksmith to thyself ere his full ruin came upon him, then had the young widow had a delicious grief, and her orphans a truly venerable, legendary sire to dream of in their after years; and all of them a care-killing competency."
+        ]
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:12.936994"
+    },
+    {
+      "test_type": "scrapy",
+      "test_name": "Status Code Handling",
+      "url": "https://httpbin.org/status/200",
+      "status_code": 200,
+      "response_time": 0.07240748405456543,
+      "extracted_data": {},
+      "success": true,
+      "timestamp": "2025-07-11T12:24:13.009517"
+    },
+    {
+      "test_type": "scrapy",
+      "test_name": "Large Content Handling",
+      "url": "https://httpbin.org/html",
+      "status_code": 200,
+      "response_time": 0.07634091377258301,
+      "extracted_data": {
+        "content_size": 3739,
+        "word_count": 617
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:13.086088"
+    },
+    {
+      "test_type": "pydoll",
+      "test_name": "JSON API Handling",
+      "url": "https://httpbin.org/json",
+      "status_code": 200,
+      "response_time": 0.07549500465393066,
+      "processed_data": {
+        "json_fields": 1,
+        "data_type": "json"
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:13.161802"
+    },
+    {
+      "test_type": "pydoll",
+      "test_name": "Fast Response Processing",
+      "url": "https://httpbin.org/get",
+      "status_code": 200,
+      "response_time": 0.08345365524291992,
+      "processed_data": {
+        "response_time_ok": true
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:13.245432"
+    },
+    {
+      "test_type": "pydoll",
+      "test_name": "Header Inspection",
+      "url": "https://httpbin.org/headers",
+      "status_code": 200,
+      "response_time": 1.691730260848999,
+      "processed_data": {
+        "headers_received": 6
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:14.937316"
+    },
+    {
+      "test_type": "pydoll",
+      "test_name": "User Agent Detection",
+      "url": "https://httpbin.org/user-agent",
+      "status_code": 200,
+      "response_time": 1.5313327312469482,
+      "processed_data": {
+        "ua_detected": true
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:16.468779"
+    },
+    {
+      "test_type": "playwright",
+      "test_name": "Complex Authentication",
+      "url": "https://httpbin.org/basic-auth/testuser/testpass",
+      "status_code": 200,
+      "response_time": 0.07779169082641602,
+      "browser_data": {},
+      "success": true,
+      "timestamp": "2025-07-11T12:24:16.647448"
+    },
+    {
+      "test_type": "playwright",
+      "test_name": "Cookie Handling",
+      "url": "https://httpbin.org/cookies/set?session=test123",
+      "status_code": 302,
+      "response_time": 0.704047679901123,
+      "browser_data": {
+        "has_cookie_content": false
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:17.452216"
+    },
+    {
+      "test_type": "playwright",
+      "test_name": "Redirect Following",
+      "url": "https://httpbin.org/redirect/2",
+      "status_code": 302,
+      "response_time": 0.07409286499023438,
+      "browser_data": {
+        "final_url": "https://httpbin.org/redirect/2",
+        "redirected": false
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:17.627096"
+    },
+    {
+      "test_type": "playwright",
+      "test_name": "Delay Handling",
+      "url": "https://httpbin.org/delay/1",
+      "status_code": 200,
+      "response_time": 1.0749759674072266,
+      "browser_data": {
+        "delay_respected": true
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:18.802518"
+    },
+    {
+      "test_type": "ip_rotation",
+      "test_name": "IP Detection and Rotation",
+      "ip_checks": [
+        {
+          "check_number": 1,
+          "ip_address": "23.115.156.177",
+          "response_time": 1.7031023502349854,
+          "user_agent_index": 0,
+          "success": true
+        },
+        {
+          "check_number": 2,
+          "ip_address": "23.115.156.177",
+          "response_time": 0.3302040100097656,
+          "user_agent_index": 1,
+          "success": true
+        },
+        {
+          "check_number": 3,
+          "ip_address": "23.115.156.177",
+          "response_time": 1.3816354274749756,
+          "user_agent_index": 2,
+          "success": true
+        }
+      ],
+      "total_checks": 3,
+      "successful_checks": 3,
+      "success": true,
+      "timestamp": "2025-07-11T12:24:23.120045"
+    },
+    {
+      "test_type": "anti_detection",
+      "test_name": "User Agent Rotation",
+      "test_data": {
+        "user_agents_tested": 3,
+        "user_agents_detected": 3,
+        "ua_variety_ok": true
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:24.703152"
+    },
+    {
+      "test_type": "anti_detection",
+      "test_name": "Header Consistency",
+      "test_data": {
+        "headers_sent": 5,
+        "headers_received": 7,
+        "headers_consistent": true
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:25.353609"
+    },
+    {
+      "test_type": "anti_detection",
+      "test_name": "Request Timing",
+      "test_data": {
+        "timing_variation": 0.5626099109649658,
+        "timing_realistic": true
+      },
+      "success": true,
+      "timestamp": "2025-07-11T12:24:29.186162"
+    }
+  ],
+  "recommendations": {
+    "production_ready": true,
+    "needs_minor_improvements": false,
+    "needs_major_improvements": false,
+    "multi_framework_working": true
+  }
+}

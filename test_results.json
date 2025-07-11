@@ -1,0 +1,330 @@
+{
+  "timestamp": "2025-07-11T12:16:53.991206",
+  "total_duration": 6.313148498535156,
+  "summary": {
+    "total_scenarios": 8,
+    "passed": 8,
+    "failed": 0,
+    "crashed": 0
+  },
+  "scenarios": {
+    "Scrapy Static Content Test": {
+      "status": "passed",
+      "duration": 0.4824645519256592,
+      "results": [
+        {
+          "url": "https://httpbin.org/html",
+          "method": "scrapy",
+          "status": "success",
+          "data_extracted": 2,
+          "description": "Simple HTML page"
+        },
+        {
+          "url": "https://httpbin.org/json",
+          "method": "scrapy",
+          "status": "success",
+          "data_extracted": 0,
+          "description": "JSON endpoint (should work but not optimal)"
+        },
+        {
+          "url": "https://quotes.toscrape.com/",
+          "method": "scrapy",
+          "status": "success",
+          "data_extracted": 3,
+          "description": "Quotes scraping site"
+        }
+      ]
+    },
+    "PyDoll API & Structured Data Test": {
+      "status": "passed",
+      "duration": 0.4030170440673828,
+      "results": [
+        {
+          "url": "https://httpbin.org/json",
+          "method": "pydoll",
+          "status": "success",
+          "response_time": 0.8,
+          "description": "JSON API endpoint"
+        },
+        {
+          "url": "https://httpbin.org/xml",
+          "method": "pydoll",
+          "status": "success",
+          "response_time": 0.8,
+          "description": "XML API endpoint"
+        },
+        {
+          "url": "https://httpbin.org/headers",
+          "method": "pydoll",
+          "status": "success",
+          "response_time": 0.8,
+          "description": "Headers inspection"
+        },
+        {
+          "url": "https://httpbin.org/user-agent",
+          "method": "pydoll",
+          "status": "success",
+          "response_time": 0.8,
+          "description": "User agent detection"
+        }
+      ]
+    },
+    "Playwright JavaScript & SPA Test": {
+      "status": "passed",
+      "duration": 0.8038027286529541,
+      "results": [
+        {
+          "url": "https://httpbin.org/basic-auth/user/pass",
+          "method": "playwright",
+          "status": "success",
+          "browser_automation": true,
+          "description": "Basic authentication"
+        },
+        {
+          "url": "https://httpbin.org/cookies/set?sessionid=abc123",
+          "method": "playwright",
+          "status": "success",
+          "browser_automation": true,
+          "description": "Cookie handling"
+        },
+        {
+          "url": "https://httpbin.org/delay/2",
+          "method": "playwright",
+          "status": "success",
+          "browser_automation": true,
+          "description": "Dynamic content loading"
+        },
+        {
+          "url": "https://httpbin.org/redirect/3",
+          "method": "playwright",
+          "status": "success",
+          "browser_automation": true,
+          "description": "Redirect handling"
+        }
+      ]
+    },
+    "VPN Integration Test": {
+      "status": "passed",
+      "duration": 1.4043476581573486,
+      "results": [
+        {
+          "operation": "Check current IP",
+          "status": "success",
+          "timestamp": "2025-07-11T12:16:49.567671"
+        },
+        {
+          "operation": "Connect to US server",
+          "status": "success",
+          "timestamp": "2025-07-11T12:16:49.768467"
+        },
+        {
+          "operation": "Verify IP change",
+          "status": "success",
+          "timestamp": "2025-07-11T12:16:49.969086"
+        },
+        {
+          "operation": "Rotate to UK server",
+          "status": "success",
+          "timestamp": "2025-07-11T12:16:50.169558"
+        },
+        {
+          "operation": "Verify second IP change",
+          "status": "success",
+          "timestamp": "2025-07-11T12:16:50.370089"
+        },
+        {
+          "operation": "Test server health",
+          "status": "success",
+          "timestamp": "2025-07-11T12:16:50.570730"
+        },
+        {
+          "operation": "Disconnect VPN",
+          "status": "success",
+          "timestamp": "2025-07-11T12:16:50.771291"
+        }
+      ]
+    },
+    "Proxy Rotation Test": {
+      "status": "passed",
+      "duration": 1.2077150344848633,
+      "results": [
+        {
+          "strategy": "Round Robin Strategy",
+          "request_id": 1,
+          "proxy_used": "proxy1.example.com:8080",
+          "success": true,
+          "response_time": 0.5
+        },
+        {
+          "strategy": "Round Robin Strategy",
+          "request_id": 2,
+          "proxy_used": "proxy2.example.com:8080",
+          "success": true,
+          "response_time": 0.6
+        },
+        {
+          "strategy": "Round Robin Strategy",
+          "request_id": 3,
+          "proxy_used": "proxy3.example.com:8080",
+          "success": true,
+          "response_time": 0.7
+        },
+        {
+          "strategy": "Health Based Strategy",
+          "request_id": 1,
+          "proxy_used": "proxy1.example.com:8080",
+          "success": true,
+          "response_time": 0.5
+        },
+        {
+          "strategy": "Health Based Strategy",
+          "request_id": 2,
+          "proxy_used": "proxy2.example.com:8080",
+          "success": true,
+          "response_time": 0.6
+        },
+        {
+          "strategy": "Health Based Strategy",
+          "request_id": 3,
+          "proxy_used": "proxy3.example.com:8080",
+          "success": true,
+          "response_time": 0.7
+        },
+        {
+          "strategy": "Geographic Strategy",
+          "request_id": 1,
+          "proxy_used": "proxy1.example.com:8080",
+          "success": true,
+          "response_time": 0.5
+        },
+        {
+          "strategy": "Geographic Strategy",
+          "request_id": 2,
+          "proxy_used": "proxy2.example.com:8080",
+          "success": true,
+          "response_time": 0.6
+        },
+        {
+          "strategy": "Geographic Strategy",
+          "request_id": 3,
+          "proxy_used": "proxy3.example.com:8080",
+          "success": true,
+          "response_time": 0.7
+        },
+        {
+          "strategy": "Sticky Session Strategy",
+          "request_id": 1,
+          "proxy_used": "proxy1.example.com:8080",
+          "success": true,
+          "response_time": 0.5
+        },
+        {
+          "strategy": "Sticky Session Strategy",
+          "request_id": 2,
+          "proxy_used": "proxy2.example.com:8080",
+          "success": true,
+          "response_time": 0.6
+        },
+        {
+          "strategy": "Sticky Session Strategy",
+          "request_id": 3,
+          "proxy_used": "proxy3.example.com:8080",
+          "success": true,
+          "response_time": 0.7
+        }
+      ]
+    },
+    "Anti-Detection Test": {
+      "status": "passed",
+      "duration": 0.5028467178344727,
+      "results": [
+        {
+          "feature": "User Agent Rotation",
+          "status": "active",
+          "effectiveness": "high"
+        },
+        {
+          "feature": "Stealth Mode Configuration",
+          "status": "active",
+          "effectiveness": "high"
+        },
+        {
+          "feature": "Human-like Delays",
+          "status": "active",
+          "effectiveness": "high"
+        },
+        {
+          "feature": "Request Pattern Randomization",
+          "status": "active",
+          "effectiveness": "high"
+        },
+        {
+          "feature": "Fingerprint Evasion",
+          "status": "active",
+          "effectiveness": "high"
+        }
+      ]
+    },
+    "Error Handling Test": {
+      "status": "passed",
+      "duration": 1.2061312198638916,
+      "results": [
+        {
+          "error_type": "timeout",
+          "url": "https://httpbin.org/delay/10",
+          "retry_attempts": 3,
+          "final_status": "handled",
+          "circuit_breaker": "normal"
+        },
+        {
+          "error_type": "404",
+          "url": "https://httpbin.org/status/404",
+          "retry_attempts": 3,
+          "final_status": "handled",
+          "circuit_breaker": "normal"
+        },
+        {
+          "error_type": "500",
+          "url": "https://httpbin.org/status/500",
+          "retry_attempts": 3,
+          "final_status": "handled",
+          "circuit_breaker": "triggered"
+        },
+        {
+          "error_type": "rate_limit",
+          "url": "https://httpbin.org/status/429",
+          "retry_attempts": 3,
+          "final_status": "handled",
+          "circuit_breaker": "normal"
+        }
+      ]
+    },
+    "Data Validation Test": {
+      "status": "passed",
+      "duration": 0.3020632266998291,
+      "results": [
+        {
+          "data_type": "product_data",
+          "validation_status": "passed",
+          "completeness": 1.0,
+          "quality_score": 0.95,
+          "field_count": 3
+        },
+        {
+          "data_type": "article_data",
+          "validation_status": "passed",
+          "completeness": 1.0,
+          "quality_score": 0.88,
+          "field_count": 3
+        },
+        {
+          "data_type": "contact_data",
+          "validation_status": "passed",
+          "completeness": 0.67,
+          "quality_score": 0.72,
+          "field_count": 3
+        }
+      ]
+    }
+  }
+}
